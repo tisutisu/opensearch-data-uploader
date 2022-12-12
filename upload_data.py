@@ -1,6 +1,9 @@
 from opensearchpy import OpenSearch, RequestsHttpConnection, AWSV4SignerAuth
 import boto3
 import os
+import yaml
+import string
+import random
 
 # Create an index with non-default settings.
 def create_index(client, index_name, number_of_shards=4):
@@ -76,19 +79,36 @@ def setup_os_client():
     )
     return client
 
+def read_metric_data(metric_file_name):
+    with open(metric_file_name) as f:
+        content = yaml.load(f, Loader=yaml.FullLoader)
+        kpi_data = content['kpi']
+    for data in kpi_data:
+        if data['name'] == 'usage':
+            for metric in data['metrics']:
+                if metric['name'] == 'Memory_MiB':
+                    memory_average = metric['average']
+                    memory_maximum = metric['maximum']
+    return {'average' : float(memory_average), 'maximum': float(memory_maximum), 'average_threshold': 80, 'maximum_threshold': 110, 'value_unit': 'MiB'}    
+
+def generate_id():
+    n = 6
+    return ''.join(random.choices(string.ascii_lowercase + string.digits, k=n))
+
 if __name__ == '__main__':
     index_name = 'test-index'
     client = setup_os_client()
     #create_index(client, index_name)
     #delete_index(client, index_name)
-
-    # document = {
-    #   'title': 'Moneyball',
-    #   'director': 'Bennett Miller',
-    #   'year': '2011'
-    # }
-    # id = '1'
-    # add_document_to_index(client, index_name, id, document)
     # delete_a_document(client, index_name, id)
+
+    metric_file_name = os.environ['KPI_YAML_FILE']
+    doc = read_metric_data(metric_file_name)
+    id = generate_id()
+    print(f"Random Generated ID: {id}")
+    add_document_to_index(client, index_name, id, doc)
+
+
+    
 
 
