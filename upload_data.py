@@ -4,6 +4,7 @@ import os
 import yaml
 import string
 import random
+from datetime import datetime
 
 # Create an index with non-default settings.
 def create_index(client, index_name, number_of_shards=4):
@@ -89,7 +90,8 @@ def read_metric_data(metric_file_name):
                 if metric['name'] == 'Memory_MiB':
                     memory_average = metric['average']
                     memory_maximum = metric['maximum']
-    return {'average' : float(memory_average), 'maximum': float(memory_maximum), 'average_threshold': 80, 'maximum_threshold': 110, 'value_unit': 'MiB'}    
+    dt_string = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    return {'date': dt_string, 'average' : float(memory_average), 'maximum': float(memory_maximum), 'average_threshold': 80, 'maximum_threshold': 110, 'value_unit': 'MiB'}    
 
 def generate_id():
     n = 6

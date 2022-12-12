@@ -1,0 +1,279 @@
+kpi:
+- name: usage
+  metrics:
+  - average: 11.332298136645962
+    first: 1.0
+    last: 24.0
+    maximum: 60.0
+    median: 5.0
+    minimum: 0.0
+    name: CPU_millicores
+  
+  - average: 102.2080745341615
+    first: 51.0
+    last: 147.0
+    maximum: 148.0
+    median: 103.0
+    minimum: 50.0
+    name: Memory_MiB
+  
+- name: nosb-inv.binding.operators.coreos.com
+  metrics:
+  - average: 47.71628039125
+    first: 0.4419715
+    last: 95.6115742
+    maximum: 95.6115742
+    median: 47.786411
+    minimum: 0.4419715
+    name: TimeToReconcile
+  
+  - average: 0.33574463449999997
+    first: 0.0344787
+    last: 0.3398864
+    maximum: 0.3722415
+    median: 0.3403815
+    minimum: 0.0313213
+    name: ReconciledToDone
+  
+  - average: 48.05202502575
+    first: 0.4764502
+    last: 95.9514606
+    maximum: 95.9514606
+    median: 48.142724349999995
+    minimum: 0.4764502
+    name: TimeToDone
+  
+- name: nosb-inv.servicebinding.io
+  metrics:
+  - average: 0.52865162425
+    first: 0.8579082
+    last: 0.7916799
+    maximum: 1.0189588
+    median: 0.517262
+    minimum: 0.0171397
+    name: TimeToReconcile
+  
+  - average: 17.57846767725
+    first: 0.0293003
+    last: 36.1483478
+    maximum: 36.485632
+    median: 17.51909565
+    minimum: 0.020854
+    name: ReconciledToDone
+  
+  - average: 18.1071193015
+    first: 0.8872085
+    last: 36.9400277
+    maximum: 37.3415926
+    median: 17.938563199999997
+    minimum: 0.3848388
+    name: TimeToDone
+  
+- name: nosb-val.binding.operators.coreos.com
+  metrics:
+  - average: 87.9008938235
+    first: 0.4681633
+    last: 176.7862415
+    maximum: 177.386452
+    median: 86.48748475
+    minimum: 0.4681633
+    name: TimeToReconcile
+  
+  - average: 0.586432928
+    first: 0.0690948
+    last: 0.5910397
+    maximum: 0.6676727
+    median: 0.5906175
+    minimum: 0.0690948
+    name: ReconciledToDone
+  
+  - average: 88.4873267515
+    first: 0.5372581
+    last: 177.3772812
+    maximum: 177.977226
+    median: 87.07766905
+    minimum: 0.5372581
+    name: TimeToDone
+  
+- name: nosb-val.servicebinding.io
+  metrics:
+  - average: 0.5099497465
+    first: 0.1042573
+    last: 0.288969
+    maximum: 1.0151734
+    median: 0.5140626500000001
+    minimum: 0.0189648
+    name: TimeToReconcile
+  
+  - average: 66.49958671975
+    first: 0.7091053
+    last: 131.5749047
+    maximum: 133.4930858
+    median: 66.57333729999999
+    minimum: 0.0562628
+    name: ReconciledToDone
+  
+  - average: 67.00953646625
+    first: 0.8133626
+    last: 131.8638737
+    maximum: 134.1147437
+    median: 66.83909825
+    minimum: 0.110587
+    name: TimeToDone
+  
+- name: sb-inc.binding.operators.coreos.com
+  metrics:
+  - average: 0.6132066385
+    first: 0.1332424
+    last: 0.1730468
+    maximum: 1.215448
+    median: 0.6265037
+    minimum: 0.1142063
+    name: TimeToReconcile
+  
+  - average: 0.00074734275
+    first: 0.205461
+    last: 8.68e-05
+    maximum: 0.205461
+    median: 8.22e-05
+    minimum: 6.55e-05
+    name: ReconciledToDone
+  
+  - average: 0.61395398125
+    first: 0.3387034
+    last: 0.1731336
+    maximum: 1.2155347
+    median: 0.6265961499999999
+    minimum: 0.1143181
+    name: TimeToDone
+  
+- name: sb-inc.servicebinding.io
+  metrics:
+  - average: 0.5332066385
+    first: 0.1332424
+    last: 0.1730468
+    maximum: 1.215448
+    median: 0.53855265
+    minimum: 0.0250955
+    name: TimeToReconcile
+  
+  - average: 0.00074734275
+    first: 0.205461
+    last: 8.68e-05
+    maximum: 0.205461
+    median: 8.22e-05
+    minimum: 6.55e-05
+    name: ReconciledToDone
+  
+  - average: 0.53395398125
+    first: 0.3387034
+    last: 0.1731336
+    maximum: 1.2155347
+    median: 0.53863465
+    minimum: 0.025175
+    name: TimeToDone
+  
+- name: sb-inv.binding.operators.coreos.com
+  metrics:
+  - average: 0.51950593575
+    first: 0.9309301
+    last: 0.872067
+    maximum: 1.0826838
+    median: 0.5133825999999999
+    minimum: 0.0194223
+    name: TimeToReconcile
+  
+  - average: 0.04201099175
+    first: 0.0331955
+    last: 0.0500562
+    maximum: 0.2635402
+    median: 0.037314299999999995
+    minimum: 0.0305113
+    name: ReconciledToDone
+  
+  - average: 0.5615169275
+    first: 0.9641256
+    last: 0.9221232
+    maximum: 1.346224
+    median: 0.55173025
+    minimum: 0.054553
+    name: TimeToDone
+  
+- name: sb-inv.servicebinding.io
+  metrics:
+  - average: 0.5162407715
+    first: 0.3232837
+    last: 0.254963
+    maximum: 1.0132105
+    median: 0.51771555
+    minimum: 0.016514
+    name: TimeToReconcile
+  
+  - average: 0.0265733085
+    first: 0.0209491
+    last: 0.0277967
+    maximum: 0.140864
+    median: 0.02203055
+    minimum: 0.016629
+    name: ReconciledToDone
+  
+  - average: 0.54281408
+    first: 0.3442328
+    last: 0.2827597
+    maximum: 1.0557754
+    median: 0.53806855
+    minimum: 0.0339198
+    name: TimeToDone
+  
+- name: sb-val.binding.operators.coreos.com
+  metrics:
+  - average: 0.52118918875
+    first: 0.2814674
+    last: 0.5997908
+    maximum: 1.013281
+    median: 0.5207472
+    minimum: 0.018698
+    name: TimeToReconcile
+  
+  - average: 0.07778742375
+    first: 0.0762666
+    last: 0.0670342
+    maximum: 0.1676632
+    median: 0.0740693
+    minimum: 0.0633296
+    name: ReconciledToDone
+  
+  - average: 0.5989766125
+    first: 0.357734
+    last: 0.666825
+    maximum: 1.13369
+    median: 0.5955898
+    minimum: 0.0981126
+    name: TimeToDone
+  
+- name: sb-val.servicebinding.io
+  metrics:
+  - average: 0.52059417175
+    first: 0.6873817
+    last: 1.0036328
+    maximum: 1.019193
+    median: 0.5200282
+    minimum: 0.0273817
+    name: TimeToReconcile
+  
+  - average: 0.06116002425
+    first: 0.0637567
+    last: 0.0676997
+    maximum: 0.1900065
+    median: 0.057706400000000005
+    minimum: 0.0465269
+    name: ReconciledToDone
+  
+  - average: 0.581754196
+    first: 0.7511384
+    last: 1.0713325
+    maximum: 1.0888758
+    median: 0.58762655
+    minimum: 0.082048
+    name: TimeToDone
+  
